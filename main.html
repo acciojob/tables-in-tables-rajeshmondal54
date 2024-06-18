@@ -1,14 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Table</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
+    <title>Tables in Tables</title>
+    <style>
+        table, th, td {
+            border: 1px solid black;
+            border-collapse: collapse;
+            padding: 10px;
+            text-align: left;
+        }
+        .black-bg {
+            background-color: black;
+            color: white;
+        }
+    </style>
+</head>
+<body>
     <table style="width: 100%; height: 100%">
-      <!-- Your code here -->
+        <tr>
+            <td>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Nested Table 1</th>
+                            <th>Column 1</th>
+                            <th>Column 2</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Data 1</td>
+                            <td>Data 2</td>
+                            <td>Data 3</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </td>
+            <td>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Nested Table 2</th>
+                            <th>Column 1</th>
+                            <th>Column 2</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Data 4</td>
+                            <td>Data 5</td>
+                            <td>Data 6</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Nested Table 3</th>
+                            <th>Column 1</th>
+                            <th>Column 2</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Data 7</td>
+                            <td class="black-bg">HTML</td>
+                            <td>Data 9</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </td>
+            <td>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Nested Table 4</th>
+                            <th>Column 1</th>
+                            <th>Column 2</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td colspan="3">
+                                <ul>
+                                    <li>List item 1</li>
+                                    <li>List item 2</li>
+                                    <li>List item 3</li>
+                                </ul>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </td>
+        </tr>
     </table>
-  </body>
+</body>
 </html>
